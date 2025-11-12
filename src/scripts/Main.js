@@ -1,4 +1,5 @@
 import Icons from './utils/Icons.js';
+import Swiper from 'swiper/bundle';
 
 class Main {
   constructor() {

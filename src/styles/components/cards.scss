@@ -1,20 +1,3 @@
-.laboratoires {
-    background-color: var(--color-bg-primary);
-
-    h2 {
-        color: var(--color-white-transparent);
-        margin-top: 0;
-        padding-top: 80px;
-        padding-bottom: 100px;
-        font-weight: 100;
-
-        .bold {
-            color: var(--color-white);
-            font-weight: 700;
-        }
-    }
-}
-
 .cards {
     padding-bottom: 80px;
     display: flex;
@@ -30,14 +13,21 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 32px;
+        align-items: center;
 
         @media (width <= 1190px) {
             display: flex;
             flex-direction: column;
+
+            &:nth-child(even) {
+                .card_content {
+                    order: 1;
+                }
+            }
         }
 
         .card_media {
-            aspect-ratio: 594/290;
+            aspect-ratio: 594/490;
             img {
                 border-radius: 16px;
                 width: 100%;

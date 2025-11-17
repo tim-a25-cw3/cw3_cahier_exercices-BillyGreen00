@@ -1,0 +1,35 @@
+.labo_reactive {
+    background-color: var(--color-primary);
+    h2 {
+        margin-top: 0;
+        padding-top: 80px;
+        padding-bottom: 100px;
+        color: var(--color-black);
+        font-weight: 200;
+
+        .bold {
+            font-weight: 700;
+        }
+    }
+
+    .cards {
+        .card {
+            .card_content {
+                align-items: center;
+                h3 {
+                    color: var(--color-black);
+                }
+                p {
+                    color: var(--color-black);
+                }
+                h5 {
+                    color: var(--color-black);
+                }
+            }
+        }
+    }
+
+    .button_content {
+        background-color: var(--color-white);
+    }
+}

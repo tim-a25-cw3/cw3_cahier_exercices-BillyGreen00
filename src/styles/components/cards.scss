@@ -46,10 +46,14 @@
             }
             p {
                 color: var(--color-white);
-                margin-top: 16px;
+                margin-top: 32px;
                 margin-bottom: 32px;
                 font-size: 32px;
                 font-family: vaR(--font-primary);
+
+                @media (width <= 1190px) {
+                    font-size: 24px;
+                }
             }
             h5 {
                 color: var(--color-white);

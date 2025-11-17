@@ -15,26 +15,55 @@
     }
 
     .cards {
+        padding-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 50px;
         .card {
+            &:nth-child(even) {
+                .card_content {
+                    order: -1;
+                }
+            }
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 32px;
 
+            @media (width <= 1190px) {
+                display: flex;
+                flex-direction: column;
+            }
+
             .card_media {
+                aspect-ratio: 594/290;
                 img {
                     border-radius: 16px;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
                 }
             }
 
             .card_content {
+                align-items: center;
                 h3 {
                     color: var(--color-white);
+                    font-family: var(--font-primary);
+                    text-transform: uppercase;
+                    font-size: 16px;
                 }
                 p {
                     color: var(--color-white);
+                    margin-top: 16px;
+                    margin-bottom: 32px;
+                    font-size: 32px;
+                    font-family: vaR(--font-primary);
                 }
                 h5 {
                     color: var(--color-white);
+                    text-transform: uppercase;
+                    font-weight: 200;
                 }
             }
         }
